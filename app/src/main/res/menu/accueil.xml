@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:title="@string/carte_titre"
-    android:id="@+id/menu_carte"
-    android:icon="@android:drawable/ic_menu_mapmode"
-    android:showAsAction="ifRoom"/>
+    <item
+        android:title="@string/carte_titre"
+        android:id="@+id/menu_carte"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:showAsAction="ifRoom"/>
 
-    <item android:title="HellFestivalier"
+    <item
+        android:title="HellFestivalier"
         android:id="@+id/menu_festivalier"
         android:icon="@android:drawable/ic_menu_gallery"
         android:showAsAction="ifRoom"/>
 
-    <item android:title="@string/menu_options"
+    <item
+        android:title="@string/menu_options"
         android:id="@+id/menu_options"
-            android:icon="@android:drawable/ic_menu_preferences"
+        android:icon="@android:drawable/ic_menu_preferences"
         android:showAsAction="ifRoom">
-
+        <!-- Sous-éléments du menu -->
         <menu>
-            <item android:title="@string/menu_envoyer"
+            <item
+                android:title="@string/menu_envoyer"
                 android:id="@+id/menu_envoyer"
                 android:icon="@android:drawable/ic_menu_send"
-                android:checkable="true"/>
+                android:checkable="true" />
 
-    </menu>
-</item>
+            <item android:id="@+id/menu_language"
+                android:title="@string/menu_language"
+                android:icon="@android:drawable/ic_menu_manage" />
+        </menu>
+    </item>
 </menu>

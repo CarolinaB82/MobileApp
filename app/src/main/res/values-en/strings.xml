@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="carte_titre"> HellMap</string>
     <string name="Prog_titre">HellProg</string>
     <string name="PopCorn_titre">HellPopCorn</string>
@@ -9,19 +10,19 @@
         <item quantity="one">second</item>
         <item quantity="other">seconds</item>
     </plurals>
-    <string name="accueil_soustitres">Officiel app</string>
-    <string name="accueil_infos"><b>This is the HellFest application.\nIf you need more informations, don\'t hesitate to call Guizmo at 0487407823.\nEnjoy the Festival!</b></string>
+    <string name="accueil_soustitres">The Hell</string>
+    <string name="accueil_infos"><b>This is the HellFest application.\n\nIf you need more informations, don\'t hesitate to call Guizmo \n at 0487407823 or by mail : guizmo.hell@gmail.com.\n\nEnjoy the Festival!</b></string>
     <string name="stub" translatable="false"><b>*********</b></string>
     <string name= "alerte_soustitres"><b>!!! WARNING !!!</b></string>
 
 
-    <string name="intitule_titre"><b>"Intitulé"</b></string>
-    <string name="lieu_titre"><b>"Lieu"</b></string>
+    <string name="intitule_titre"><b>"Title"</b></string>
+    <string name="lieu_titre"><b>"Location"</b></string>
     <string name="informations_titre"><b>"Informations"</b></string>
     <string name="urgent_titre"><b>"Urgent"</b></string>
-    <string name="envoyer_titre"><b>"Envoyer"</b></string>
-    <string name="alerte_envoi">Alert "%1$s" envoyée</string>
-    <string name="alerte_envoi_urgent">Alert (%1$s) envoyée !</string>
+    <string name="envoyer_titre"><b>"send"</b></string>
+    <string name="alerte_envoi">Alert "%1$s" sent !</string>
+    <string name="alerte_envoi_urgent">Alert (%1$s) sent !</string>
     <array name="alerte_lieux">
         <item>Mainstage1</item>
         <item>Mainstage2</item>
@@ -30,16 +31,17 @@
         <item>Temple</item>
 
     </array>
-    <string name= "annuaire_titre">Annuaire</string>
-    <string name="alerte_confirmer">Confirmez envoi</string>
+    <string name= "annuaire_titre">Directory</string>
+    <string name="alerte_confirmer">Confirm sending</string>
     <string name="menu_options">Options</string>
-    <string name="menu_envoyer">Envoyer</string>
+    <string name="menu_envoyer">Send</string>
+    <string name="menu_language">FR</string>
 
-    <string name="menu_festivalier">Festivalier</string>
-    <string name="nom_titre">Nom</string>
-    <string name="age_titre">Age</string>
-    <string name="origine_titre">Origine</string>
-    <string name="envoyer_festivalier"><b>"Envoyer"</b></string>
-    <string name="festivalier_chercher">Chercher</string>
+    <string name="menu_festivalier">Festivalgoer</string>
+    <string name="nom_titre">Name</string>
+    <string name="age_titre">Old</string>
+    <string name="origine_titre">Origin</string>
+    <string name="envoyer_festivalier"><b>"Send"</b></string>
+    <string name="festivalier_chercher">Search</string>
 
 </resources>

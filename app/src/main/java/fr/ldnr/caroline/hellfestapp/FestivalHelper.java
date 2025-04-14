@@ -26,7 +26,7 @@ public class FestivalHelper extends SQLiteOpenHelper {
         db.execSQL(insertionOrigine, new Object[]{"Suede"});
         db.execSQL(insertionOrigine, new Object[]{"Espagne"});
         db.execSQL(insertionOrigine, new Object[]{"Australie"});
-        db.execSQL(insertionOrigine, new Object[]{"Lion"});
+        db.execSQL(insertionOrigine, new Object[]{"Angleterre"});
         db.execSQL("CREATE TABLE festivalier (id INTEGER PRIMARY KEY AUTOINCREMENT, nom TEXT NOT NULL, age INTEGER NOT NULL, id_origine INTEGER NOT NULL, FOREIGN KEY (id_origine) REFERENCES origine (id))");
 
 

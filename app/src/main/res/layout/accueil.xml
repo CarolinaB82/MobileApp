@@ -25,9 +25,9 @@
     <TextView
         android:id="@+id/tvInfos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/accueil_infos"
-        android:autoLink="all"/>
+        android:layout_height="216dp"
+        android:autoLink="all"
+        android:text="@string/accueil_infos" />
     <!-- ou android:autoLink="phone|email"
     pour specifier que ca ne concerne que le
     phone ou le email-->
@@ -66,7 +66,7 @@
     <TextView
         android:id="@+id/tvNouvelles"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="131dp"
         android:text="@string/stub" />
     <Button
         android:id="@+id/btAnnuaire"

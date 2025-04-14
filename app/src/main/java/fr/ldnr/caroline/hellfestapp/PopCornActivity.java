@@ -75,7 +75,16 @@ public class PopCornActivity extends Activity {
         protected void onDraw(@NonNull Canvas canvas) {
             //super.onDraw(canvas);
             Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.popcorn1);
-            canvas.drawBitmap(bmp, 0, 0, null);
+
+            // Obtenir la largeur et la hauteur de la vue
+            int viewWidth = getWidth();
+            int viewHeight = getHeight();
+
+            // Redimensionner le bitmap pour qu'il corresponde à la taille de la vue
+            Bitmap scaledBitmap = Bitmap.createScaledBitmap(bmp, viewWidth, viewHeight, true);
+
+            // Dessiner le bitmap redimensionné
+            canvas.drawBitmap(scaledBitmap, 0, 0, null);
         }
     }}
 

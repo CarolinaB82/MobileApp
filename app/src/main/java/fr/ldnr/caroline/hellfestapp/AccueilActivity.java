@@ -20,7 +20,13 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
+import android.content.Context;
+import android.content.res.Configuration;
+import android.os.Build;
 
+import java.util.List;
+import java.util.Locale;
+import android.os.LocaleList;
 /*
  * Classe d'accueil
  */
@@ -38,7 +44,6 @@ public class AccueilActivity extends Activity implements View.OnClickListener {
         Button btCarte = findViewById(R.id.btCarte);
         // setOnClickListener
         btCarte.setOnClickListener(this);
-
 
         // Charger les evenements
         Button btProg = findViewById(R.id.btAlerte);
@@ -133,11 +138,52 @@ Dans la première méthode, le contexte AccueilActivity.this est utilisé pour c
             // on sauvegarde les modifications
             ed.apply();
         }
-
+        if (item.getItemId() == R.id.menu_language) {
+            // Gérer le changement de langue
+            changeLanguage();
+        }
 
         // afficher le menu
         return true;
     }
+
+
+
+    private void changeLanguage() {
+        // Récupère la langue actuelle
+        Locale currentLocale = getResources().getConfiguration().locale;
+
+        // Définir la nouvelle langue (alternance entre français et anglais)
+        Locale newLocale = currentLocale.getLanguage().equals("fr") ? Locale.ENGLISH : Locale.FRENCH;
+
+        // Applique la nouvelle langue
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            // Pour Android 7.0 (API 24) et plus, utiliser LocaleList
+            LocaleList localeList = new LocaleList(newLocale);
+            LocaleList.setDefault(localeList);
+
+            Configuration config = new Configuration();
+            config.setLocales(localeList);
+            // Crée un contexte avec la nouvelle configuration
+            Context context = createConfigurationContext(config);
+            // Applique le contexte créé
+            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        } else {
+            // Pour les versions inférieures à Android 7.0
+            Locale.setDefault(newLocale);
+            Configuration config = new Configuration();
+            config.locale = newLocale;
+            // Met à jour la configuration de manière classique
+            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        }
+
+        // Redémarre l'activité pour appliquer les changements de langue
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
+    }
+
+
 
     /*
  * Methode pour lire les nouvelles

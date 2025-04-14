@@ -1,6 +1,8 @@
 <resources>
     <!--sur cette chaine la il n'y aura jamais de traduction-->
     <string name="app_name" translatable="false">Mon HellFest</string>
+
+
     <string name="carte_titre">HellPlan</string>
     <string name="Prog_titre">HellProg</string>
     <string name="PopCorn_titre">HellPopCorn</string>
@@ -10,8 +12,8 @@
         <item quantity="one">seconde</item>
         <item quantity="other">secondes</item>
     </plurals>
-    <string name="accueil_soustitres"><b>App Officielle</b></string>
-    <string name="accueil_infos" translatable="false">C\'est bien l\'application du <b>HellFest</b>.\nDes champs pour vous acceuillir de plus de 4000m<small><sup>2</sup></small>.\nSi vous voulez plus d\'informations n\'hésitez pas a appeler Guizmo au 0487407823 ou par email : guizmo.hell@gmail.com.\nBon Festival !</string>
+    <string name="accueil_soustitres"><b>The Hell</b></string>
+    <string name="accueil_infos" translatable="false">C\'est bien l\'application du <b>HellFest</b>.\n\nDes champs pour vous acceuillir de plus de 4000m<small><sup>2</sup></small>.\n\nSi vous voulez plus d\'informations n\'hésitez pas a appeler Guizmo \n au 0487407823 ou par email : guizmo.hell@gmail.com.\n \nBon Festival !</string>
     <string name="stub" translatable="false"><b>*********</b></string>
     <!-- stub permet de se rendre compte qu'on a oublier quelque chose-->
     <string name= "alerte_soustitres"><b>!!! ALERTE !!!</b></string>
@@ -34,6 +36,7 @@
     <string name="alerte_confirmer">Confirmez envoi</string>
     <string name="menu_options">Options</string>
     <string name="menu_envoyer">Envoyer</string>
+    <string name="menu_language">EN</string>
 
     <string name="menu_festivalier">Festivalier</string>
     <string name="nom_titre">Nom</string>
@@ -46,6 +49,9 @@
         <!-- Assurez-vous qu'il n'y a pas de redéfinition du nom ici -->
         <item name="android:label">@string/app_name</item>
     </style>
+
+
+
 
 
 </resources>
