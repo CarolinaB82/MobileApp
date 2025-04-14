@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSoustitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accueil_soustitres"
+        android:textSize="16pt"
+        android:textColor="#FF5733"
+        android:textAlignment="center"
+        android:background= "#000000"
+        android:padding="25dp"/>
+
+
+
+    />
+<!-- en xml les proprietes sont en android : -->
+    <TextView
+        android:id="@+id/tvInfos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accueil_infos"
+        android:autoLink="all"/>
+    <!-- ou android:autoLink="phone|email"
+    pour specifier que ca ne concerne que le
+    phone ou le email-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btCarte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/carte_titre"
+        android:textColor="#FF5733"
+        android:backgroundTint="#000000"
+            />
+
+
+
+    <Button
+        android:id="@+id/btAlerte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/alerte_soustitres"
+        android:textColor="#FF5733"
+        android:backgroundTint="#000000"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNouvelles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stub" />
+    <Button
+        android:id="@+id/btAnnuaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/annuaire_titre"
+        android:textColor="#FF5733"
+        android:backgroundTint="#000000"/>
+
+</LinearLayout>
+</ScrollView>

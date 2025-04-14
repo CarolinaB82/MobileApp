@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+<TableRow>
+
+
+    <!-- Texte en noir -->
+
+    <TextView
+        style="@style/cellule"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:text="Ben"
+        android:textColor="#000000" />
+
+    <TextView
+        style="@style/cellule"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:text="Directeur"
+        android:textColor="#000000" /> <!-- Texte en noir -->
+
+    <TextView
+        style="@style/cellule_tel"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:text="0453462122"
+        android:textColor="#000000" /> <!-- Texte en noir -->
+
+</TableRow>
+
+<TableRow>
+
+    <!-- Texte en noir -->
+
+    <TextView
+        style="@style/cellule"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:text="Joe"
+        android:textColor="#000000" />
+
+    <!-- Texte en noir -->
+
+    <TextView
+        style="@style/cellule"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:text="Costumier"
+
+        android:textColor="#000000" />
+
+    <TextView
+    style="@style/cellule_tel"
+    android:layout_width="135dp"
+    android:layout_height="51dp"
+    android:text="0456989908"
+    android:textColor="#000000" /> <!-- Texte en noir -->
+</TableRow>
+
+<TableRow>
+
+    <!-- Texte en noir -->
+
+    <!-- Texte en noir -->
+
+    <TextView
+        style="@style/cellule"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:text="Jane"
+        android:textColor="#000000" />
+
+    <TextView
+        style="@style/cellule"
+        android:layout_width="146dp"
+        android:layout_height="51dp"
+        android:text="Maquilleuse"
+        android:textColor="#000000" />
+
+    <TextView
+    style="@style/cellule_tel"
+        android:layout_width="135dp"
+    android:layout_height="51dp"
+    android:text="0453032416"
+    android:textColor="#000000" /> <!-- Texte en noir -->
+</TableRow>
+    </TableLayout>

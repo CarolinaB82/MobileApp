@@ -1,0 +1,51 @@
+<resources>
+    <!--sur cette chaine la il n'y aura jamais de traduction-->
+    <string name="app_name" translatable="false">Mon HellFest</string>
+    <string name="carte_titre">HellPlan</string>
+    <string name="Prog_titre">HellProg</string>
+    <string name="PopCorn_titre">HellPopCorn</string>
+    <string name="carte_bienvenue">Bienvenue en Enfer !!</string>
+    <string name="popcorn_avertissement" >Pas de popcorn aux chanteurs (%1$d %2$s)</string>
+    <plurals name="popcorn_secondes" >
+        <item quantity="one">seconde</item>
+        <item quantity="other">secondes</item>
+    </plurals>
+    <string name="accueil_soustitres"><b>App Officielle</b></string>
+    <string name="accueil_infos" translatable="false">C\'est bien l\'application du <b>HellFest</b>.\nDes champs pour vous acceuillir de plus de 4000m<small><sup>2</sup></small>.\nSi vous voulez plus d\'informations n\'hésitez pas a appeler Guizmo au 0487407823 ou par email : guizmo.hell@gmail.com.\nBon Festival !</string>
+    <string name="stub" translatable="false"><b>*********</b></string>
+    <!-- stub permet de se rendre compte qu'on a oublier quelque chose-->
+    <string name= "alerte_soustitres"><b>!!! ALERTE !!!</b></string>
+
+    <string name="intitule_titre"><b>"Intitulé"</b></string>
+    <string name="lieu_titre"><b>"Lieu"</b></string>
+    <string name="informations_titre"><b>"Informations"</b></string>
+    <string name="urgent_titre"><b>"Urgent"</b></string>
+    <string name="envoyer_titre"><b>"Envoyer"</b></string>
+    <string name="alerte_envoi">Alert (%1$s) envoyée</string>
+    <string name="alerte_envoi_urgent">Alert (%1$s) envoyée !</string>
+    <array name="alerte_lieux">
+        <item>Mainstage1</item>
+        <item>Mainstage2</item>
+        <item>Altar</item>
+        <item>Warzone</item>
+        <item>Temple</item>
+    </array>
+<string name= "annuaire_titre">Annuaire</string>
+    <string name="alerte_confirmer">Confirmez envoi</string>
+    <string name="menu_options">Options</string>
+    <string name="menu_envoyer">Envoyer</string>
+
+    <string name="menu_festivalier">Festivalier</string>
+    <string name="nom_titre">Nom</string>
+    <string name="age_titre">Age</string>
+    <string name="origine_titre">Origine</string>
+    <string name="envoyer_festivalier"><b>"Envoyer"</b></string>
+    <string name="festivalier_chercher">Chercher</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Assurez-vous qu'il n'y a pas de redéfinition du nom ici -->
+        <item name="android:label">@string/app_name</item>
+    </style>
+
+
+</resources>

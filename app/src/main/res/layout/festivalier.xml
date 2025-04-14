@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Déclaration d'un LinearLayout avec une orientation verticale,
+         prenant toute la largeur et la hauteur de l'écran -->
+
+
+
+    <TextView
+        android:id="@+id/tvNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:labelFor="@id/etnom"/>
+    <!-- TextView pour afficher le label "Nom", avec une largeur qui remplit le parent
+         et une hauteur ajustée au contenu, lié à l'EditText avec l'ID 'etnom' -->
+
+    <EditText
+        android:id="@+id/etnom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le nom du festivalier"
+        android:text=""
+        android:inputType="textCapCharacters"
+        />
+    <!-- EditText pour saisir le nom du festivalier, prenant toute la largeur disponible,
+        avec un hint, et forçant les caractères en majuscules -->
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:labelFor="@id/etage"/>
+    <!-- TextView pour afficher le label "Age", lié à l'EditText avec l'ID 'etage' -->
+
+    <EditText
+        android:id="@+id/etage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez l'age du festivalier"
+        android:text=""
+        android:inputType="number"
+        />
+    <!-- EditText pour saisir l'âge du festivalier, prenant toute la largeur disponible,
+         avec un hint et acceptant uniquement des chiffres -->
+    <TextView
+        android:id="@+id/tvOrigine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Origine"
+        android:labelFor="@id/etorigine"/>
+
+    <EditText
+        android:id="@+id/etorigine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez l'origine du festivalier"
+        android:text=""
+        android:inputType="textCapWords"
+        />
+    <Button
+        android:id="@+id/btEnvoyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        />
+    <!-- Bouton pour envoyer les informations, prenant toute la largeur disponible -->
+
+    <Button
+        android:id="@+id/btChercher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/festivalier_chercher"
+        />
+    <!-- Bouton pour rechercher des informations, prenant toute la largeur disponible,
+         avec le texte défini dans les ressources de chaîne -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <!-- ScrollView pour afficher le résultat de la recherche, prenant toute la largeur disponible,
+             avec un poids de mise en page de 1 pour occuper l'espace restant -->
+
+
+        <TextView
+        android:id="@+id/tvResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    </ScrollView>
+</LinearLayout>

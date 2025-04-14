@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="carte_titre"> HellMap</string>
+    <string name="Prog_titre">HellProg</string>
+    <string name="PopCorn_titre">HellPopCorn</string>
+    <string name="carte_bienvenue">Welcome to the Hell</string>
+    <string name="popcorn_avertissement"> No popcorn for the singers (%1$d %2$s)</string>
+    <plurals name="popcorn_secondes" >
+        <item quantity="one">second</item>
+        <item quantity="other">seconds</item>
+    </plurals>
+    <string name="accueil_soustitres">Officiel app</string>
+    <string name="accueil_infos"><b>This is the HellFest application.\nIf you need more informations, don\'t hesitate to call Guizmo at 0487407823.\nEnjoy the Festival!</b></string>
+    <string name="stub" translatable="false"><b>*********</b></string>
+    <string name= "alerte_soustitres"><b>!!! WARNING !!!</b></string>
+
+
+    <string name="intitule_titre"><b>"Intitulé"</b></string>
+    <string name="lieu_titre"><b>"Lieu"</b></string>
+    <string name="informations_titre"><b>"Informations"</b></string>
+    <string name="urgent_titre"><b>"Urgent"</b></string>
+    <string name="envoyer_titre"><b>"Envoyer"</b></string>
+    <string name="alerte_envoi">Alert "%1$s" envoyée</string>
+    <string name="alerte_envoi_urgent">Alert (%1$s) envoyée !</string>
+    <array name="alerte_lieux">
+        <item>Mainstage1</item>
+        <item>Mainstage2</item>
+        <item>Altar</item>
+        <item>Warzone</item>
+        <item>Temple</item>
+
+    </array>
+    <string name= "annuaire_titre">Annuaire</string>
+    <string name="alerte_confirmer">Confirmez envoi</string>
+    <string name="menu_options">Options</string>
+    <string name="menu_envoyer">Envoyer</string>
+
+    <string name="menu_festivalier">Festivalier</string>
+    <string name="nom_titre">Nom</string>
+    <string name="age_titre">Age</string>
+    <string name="origine_titre">Origine</string>
+    <string name="envoyer_festivalier"><b>"Envoyer"</b></string>
+    <string name="festivalier_chercher">Chercher</string>
+
+</resources>

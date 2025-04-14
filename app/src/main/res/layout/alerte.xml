@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvtitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alerte_soustitres"
+        android:textSize="16pt"
+        android:textColor="#FF5733"
+        android:textAlignment="center"
+        android:backgroundTint="@color/cardview_dark_background"/>
+
+
+    />
+
+    <TextView
+        android:id="@+id/tvIntitule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intitule_titre"
+        android:labelFor="@id/etintitulé"/>
+
+    <EditText
+        android:id="@+id/etintitulé"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez l'intitulé de l'alerte"
+        android:text=""
+        android:inputType="textCapCharacters"
+        />
+
+    <TextView
+        android:id="@+id/tvLieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lieu_titre"
+        android:labelFor="@id/etlieu"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/etlieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le lieu de l'alerte"
+        android:text=""
+        android:ems="10"
+        android:inputType="textCapSentences"
+        />
+
+    <TextView
+        android:id="@+id/tvInformations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/informations_titre"
+        android:labelFor="@id/etinformations"/>
+    />
+
+    <EditText
+        android:id="@+id/etinformations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Entrez les informations de l'alerte"
+        android:text=""
+        android:inputType="textMultiLine|textCapSentences"
+        android:gravity="top|start"
+        android:scrollbars="vertical"
+        android:lines="4"
+        android:minLines="4"
+        android:layout_weight="40"/>
+
+    <CheckBox
+        android:id="@+id/cbUrgent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/urgent_titre" />
+
+    <Button
+        android:id="@+id/btEnvoyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:onClick="envoyerClick"/>
+
+
+</LinearLayout>
